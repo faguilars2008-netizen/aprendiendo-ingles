@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprende Ingles</title>
+
+    <!-- Imagen en la pestaña (favicon) -->
+    <link rel="icon" href="img/logo.jpg">
+
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+    <!-- Librería para serpentinas -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Imagen representativa de la plataforma -->
+        <img class="logo" src="img/logo pagina.jpg" alt="Plataforma">
+
+        <h2>Bienvenido</h2>
+
+        <!-- Campo de texto -->
+        <input type="text" placeholder="Ingresa tu nombre" id="nombre">
+
+        <h3>Selecciona tu avatar</h3>
+
+        <!-- Avatares -->
+        <div class="avatars">
+            <img src="img/anais.webp" onclick="seleccionarAvatar(this)">
+            <img src="img/darwin.webp" onclick="seleccionarAvatar(this)">
+            <img src="img/gumball.png" onclick="seleccionarAvatar(this)">
+        </div>
+
+        <br>
+
+        <!-- Botón -->
+        <button onclick="ingresar()">Ingresar</button>
+
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

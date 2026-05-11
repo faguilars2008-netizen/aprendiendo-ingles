@@ -1,0 +1,310 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        img.logo {
+            width: 150px;
+            margin-bottom: 15px;
+        }
+
+        .avatars img {
+            width: 80px;
+            margin: 10px;
+            cursor: pointer;
+            border: 3px solid transparent;
+            border-radius: 50%;
+        }
+
+        .avatars img:hover {
+            border: 3px solid blue;
+        }
+
+        .selected {
+            border: 3px solid green !important;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+     /* ===== ESTILO NUEVO MUY ENTRETENIDO PARA NIÑOS ===== */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive;
+
+    /* Fondo divertido */
+    background: linear-gradient(
+        135deg,
+        #5ee7ff,
+        #ffb3ff,
+        #fff07a,
+        #8dffb7
+    );
+
+    background-size: 400% 400%;
+    animation: fondoMagico 10s infinite alternate ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+/* Animación del fondo */
+@keyframes fondoMagico{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+/* Caja principal */
+.contenedor{
+    width: 520px;
+    padding: 35px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 40px;
+
+    border: 10px solid white;
+
+    box-shadow:
+        0 0 0 8px #ff66b2,
+        0 0 0 16px #00d4ff,
+        0 15px 35px rgba(0,0,0,0.25);
+
+    animation: entrada 1s ease;
+}
+
+/* Animación entrada */
+@keyframes entrada{
+    from{
+        transform: scale(0.5) rotate(-5deg);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+}
+
+/* Título */
+h1{
+    font-size: 45px;
+    color: #ff4081;
+
+    text-shadow:
+        3px 3px #ffd600,
+        6px 6px #00cfff;
+
+    margin-bottom: 20px;
+
+    animation: brincar 1.5s infinite alternate;
+}
+
+/* Efecto divertido */
+@keyframes brincar{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-8px);
+    }
+}
+
+/* Imagen principal */
+.logo{
+    width: 210px;
+    border-radius: 30px;
+
+    border: 8px solid #00cfff;
+
+    box-shadow: 0 0 20px rgba(0,212,255,0.6);
+
+    transition: 0.4s;
+}
+
+.logo:hover{
+    transform: rotate(-6deg) scale(1.08);
+}
+
+/* Texto */
+p{
+    font-size: 22px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Input */
+input{
+    width: 85%;
+
+    padding: 16px;
+
+    margin-top: 15px;
+
+    border-radius: 25px;
+
+    border: 5px solid #ffd600;
+
+    background: #fff9c4;
+
+    font-size: 21px;
+
+    text-align: center;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Focus */
+input:focus{
+    transform: scale(1.05);
+
+    border-color: #00e676;
+
+    box-shadow: 0 0 20px #00e676;
+}
+
+/* Zona avatares */
+.avatares{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+/* Avatares */
+.avatar{
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover avatar */
+.avatar:hover{
+    transform: scale(1.2) rotate(12deg);
+
+    border-color: #ff9800;
+
+    box-shadow: 0 0 25px #ff9800;
+}
+
+/* Avatar seleccionado */
+.avatar.seleccionado{
+    border: 6px solid #00ff88;
+
+    box-shadow: 0 0 30px #00ff88;
+
+    transform: scale(1.15);
+}
+
+/* Botón */
+button{
+    margin-top: 35px;
+
+    padding: 18px 45px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background: linear-gradient(
+        45deg,
+        #ff4081,
+        #ff9800
+    );
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Hover botón */
+button:hover{
+    transform: scale(1.12);
+
+    background: linear-gradient(
+        45deg,
+        #00cfff,
+        #00e676
+    );
+
+    box-shadow: 0 0 25px rgba(255,255,255,0.8);
+}
+
+/* Click */
+button:active{
+    transform: scale(0.95);
+}
+.avatars img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: 0.3s;
+}
+
+/* CÍRCULO VERDE */
+.seleccionado{
+    border: 4px solid limegreen !important;
+    box-shadow: 0 0 20px limegreen;
+    transform: scale(1.1);
+}

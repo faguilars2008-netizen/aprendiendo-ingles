@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Fondo estilo caricatura */
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor{
+
+    background: white;
+
+    width: 420px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+
+    animation: aparecer 1s ease;
+}
+
+
+/* TÍTULO */
+#bienvenida h1{
+
+    color: #ff6f00;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+}
+
+
+/* AVATAR */
+#bienvenida img{
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #00bcd4;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+
+    margin-bottom: 30px;
+
+    transition: 0.3s;
+}
+
+#bienvenida img:hover{
+
+    transform: scale(1.05);
+}
+
+
+/* BOTÓN */
+button{
+
+    background: #ff4081;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    font-size: 20px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.25);
+}
+
+button:hover{
+
+    background: #f50057;
+
+    transform: scale(1.05);
+}
+
+
+/* ANIMACIÓN */
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
